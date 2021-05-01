@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Censorus</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="popup.css">
+
+</head>
+
+<body>
+    <div class="heading-box">
+        <img src="/images/logo.svg" alt="logo">
+        <h1 class="heading">Censorus</h1>
+    </div>
+
+    <hr>
+    <div class="toggle-box">
+        <p>Turn Off Censorus</p>
+        <label class="toggle">
+            <input type="checkbox" name="toggle" id="toggle">
+            <div class="slider"></div>
+        </label>
+    </div>
+    <hr>
+
+    <div class="filter-box">
+        <p>Filter out hate speech</p>
+        <label class="filter">
+            <input type="radio" checked="checked" name="filter" id="filter1">
+            Low Senstivity
+        </label>
+        <label class="filter">
+            <input type="radio" name="filter" id="filter2">
+            Medium Senstivity
+        </label>
+        <label class="filter">
+            <input type="radio" name="filter" id="filter3">
+            High Senstivity
+        </label>
+    </div>
+    <hr>
+
+    <a href="#" class="custom-words">Add custom words <img src="/images/arrow.svg"></a>
+    <hr>
+
+    <div class="replace-box">
+        <p>Replace censored words with:</p>
+        <form id="replacements">
+            <input type="radio" name="censor" value="normal" class="normal checked" checked="checked">
+            <input type="radio" name="censor" value="blahaj" class="blahaj checked">
+            <input type="radio" name="censor" value="rainbow" class="rainbow checked">
+            <input type="radio" name="censor" value="pizza" class="pizza checked" >
+            <div>It looks like you're feeling <b><i><span id="result">normal</span>-ish</i></b> today..</div>
+        </form>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>

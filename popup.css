@@ -1,0 +1,155 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+html,
+body {
+  width: 284px;
+  min-height: 180px;
+  margin-left: 0;
+}
+
+.heading-box {
+  display: flex;
+  justify-content: center;
+}
+
+.heading-box h1 {
+  margin-left: 25px;
+}
+
+.toggle-box {
+  display: flex;
+  justify-content: center;
+}
+
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 24px;
+  margin-left: 25px;
+  margin-top: 12px;
+}
+
+.toggle input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  border-radius: 20px;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(17px);
+  -ms-transform: translateX(17px);
+  transform: translateX(17px);
+}
+
+.filter-box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.filter-box p {
+  font-weight: bold;
+}
+
+.filter {
+  padding: 7px;
+  text-align: left;
+  margin-left: 50px;
+}
+
+.custom-words {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  color: #000;
+}
+
+.replace-box {
+  text-align: center;
+}
+
+.replace-box p {
+  font-weight: bold;
+}
+
+#replacements > input[type="radio"] {
+  -webkit-appearance: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: all 0.2s ease;
+}
+
+.checked {
+  opacity: 0.4;
+}
+
+.checked:hover {
+  opacity: 1;
+}
+
+.checked:checked {
+  border: solid 1px;
+  opacity: 1;
+}
+
+.normal {
+  background: url("/images/normal.svg") center;
+  background-size: 45px;
+}
+
+.blahaj {
+  background: url("/images/blahaj.svg") center;
+  background-size: 30px;
+}
+
+.rainbow {
+  background: url("/images/rainbow.svg") center;
+  background-size: 35px;
+}
+.pizza {
+  background: url("/images/pizza.svg") center;
+  background-size: 32px;
+}
+
+#replacements div {
+  margin: 7px;
+  font-size: 13px;
+}
