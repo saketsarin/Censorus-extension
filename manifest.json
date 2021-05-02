@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Censorus",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo tempore repudiandae voluptas ad iure beatae eveniet impedit voluptates, sapiente consectetur.",
+    "description": "Censorus is an extension that blocks out all the haters! It does this by censoring all profanity with pizzas, rainbows and Blahajs- who doesn't want to see Blahaj!",
     "version": "1.0.0",
     "icons": {"128": "/images/logo.svg" },
     "browser_action": {
