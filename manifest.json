@@ -9,6 +9,16 @@
        "default_title": "Censorus",
        "default_popup": "popup.html"
     },
-    "permissions": [ "activeTab", "http://*/*", "https://*/*" ]
+    "background": {
+       "scripts": ["./background.js"]
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*.youtube.com/*"],
+        "js": ["script.js"],
+        "all_frames": true
+      }
+    ],
+    "permissions": [ "activeTab", "http://*/*", "https://*/*","storage" ]
  }
  
